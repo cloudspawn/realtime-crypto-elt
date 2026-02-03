@@ -12,4 +12,6 @@ wheels/
 .envrc
 .venv/
 .python-version
-uv.lock
+uv.locksecrets/
+
+secrets/

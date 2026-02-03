@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: crypto_data
+    database: bigquery-486314
+    tables:
+      - name: raw_prices

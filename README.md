@@ -148,6 +148,54 @@ cd dbt_transform
 dbt run
 ```
 
+## Alternative: Orchestration with Airflow
+
+In production, you would typically add Airflow as an orchestration layer on top of this pipeline. Instead of running scripts manually in separate terminals, Airflow schedules and monitors everything.
+
+### Example DAG
+```python
+from airflow import DAG
+from airflow.operators.bash import BashOperator
+from datetime import datetime, timedelta
+
+with DAG(
+    "crypto_elt_pipeline",
+    start_date=datetime(2024, 1, 1),
+    schedule_interval=timedelta(minutes=5),
+    catchup=False,
+) as dag:
+
+    produce = BashOperator(
+        task_id="produce",
+        bash_command="python /opt/airflow/scripts/producer.py --once",
+    )
+
+    consume = BashOperator(
+        task_id="consume",
+        bash_command="python /opt/airflow/scripts/consumer.py --once",
+    )
+
+    transform = BashOperator(
+        task_id="dbt_run",
+        bash_command="cd /opt/airflow/dbt && dbt run",
+    )
+
+    produce >> consume >> transform
+```
+
+### What Airflow adds
+
+| Without Airflow | With Airflow |
+|-----------------|--------------|
+| Manual script execution | Scheduled runs (cron-like) |
+| No retry on failure | Automatic retries |
+| No visibility | Web UI with logs, history, alerts |
+| Scripts run in loops | Scripts run once per trigger |
+
+### Why it's not included here
+
+Airflow requires its own infrastructure (scheduler, webserver, database). This project focuses on the core ELT components: Kafka, BigQuery, and dbt. Adding Airflow would be a natural next step for production deployment.
+
 ## License
 
 MIT

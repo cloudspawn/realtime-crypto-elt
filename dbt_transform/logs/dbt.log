@@ -1,0 +1,582 @@
+[0m15:25:17.194782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x708c5bceb140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x708c5c416a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x708c5b8ca840>]}
+
+
+============================== 15:25:17.380345 | 8f94ae48-fc01-4a63-a6ff-8e518a5ea3bb ==============================
+[0m15:25:17.380345 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:25:17.382689 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'partial_parse': 'True', 'static_parser': 'True', 'introspect': 'True', 'no_print': 'None', 'warn_error': 'None', 'use_colors': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'write_json': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'quiet': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'profiles_dir': '/home/hal/.dbt', 'invocation_command': 'dbt init crypto_dbt', 'printer_width': '80', 'target_path': 'None', 'debug': 'False', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs'}
+[0m15:25:17.529665 [info ] [MainThread]: Creating dbt configuration folder at /home/hal/.dbt
+[0m15:25:17.532744 [debug] [MainThread]: Starter project path: /home/hal/projets/realtime-crypto-elt/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m15:25:17.618361 [info ] [MainThread]: 
+Your new dbt project "crypto_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:25:17.619830 [info ] [MainThread]: Setting up your profile.
+[0m15:27:41.351781 [info ] [MainThread]: Profile crypto_dbt written to /home/hal/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:27:41.353792 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 144.33331, "process_in_blocks": "19208", "process_kernel_time": 3.860276, "process_mem_max_rss": "395392", "process_out_blocks": "200256", "process_user_time": 42.88124}
+[0m15:27:41.355449 [debug] [MainThread]: Command `dbt init` succeeded at 15:27:41.355204 after 144.34 seconds
+[0m15:27:41.356680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x708c5b42ec90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x708c399453a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x708c5b5cd970>]}
+[0m15:27:41.358207 [debug] [MainThread]: Flushing usage events
+[0m15:27:41.915231 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:29:51.059819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x746a3f1e0710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x746a3ee6f6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x746a3f73cb30>]}
+
+
+============================== 15:29:51.068800 | 9a222266-19fe-4c8a-b395-2f9a30b3be7d ==============================
+[0m15:29:51.068800 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:29:51.070304 [debug] [MainThread]: running dbt with arguments {'log_path': '/home/hal/projets/realtime-crypto-elt/dbt_transform/logs', 'partial_parse': 'True', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'fail_fast': 'False', 'static_parser': 'True', 'debug': 'False', 'write_json': 'True', 'printer_width': '80', 'use_colors': 'True', 'introspect': 'True', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'warn_error': 'None', 'version_check': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'log_format': 'default', 'use_experimental_parser': 'False', 'profiles_dir': '/home/hal/.dbt', 'cache_selected_only': 'False', 'log_cache_events': 'False'}
+[0m15:29:51.101216 [info ] [MainThread]: dbt version: 1.11.2
+[0m15:29:51.102664 [info ] [MainThread]: python version: 3.12.3
+[0m15:29:51.103562 [info ] [MainThread]: python path: /home/hal/projets/realtime-crypto-elt/.venv/bin/python3
+[0m15:29:51.104485 [info ] [MainThread]: os info: Linux-6.8.0-90-generic-x86_64-with-glibc2.39
+[0m15:30:07.937924 [info ] [MainThread]: Using profiles dir at /home/hal/.dbt
+[0m15:30:07.939051 [info ] [MainThread]: Using profiles.yml file at /home/hal/.dbt/profiles.yml
+[0m15:30:07.940257 [info ] [MainThread]: Using dbt_project.yml file at /home/hal/projets/realtime-crypto-elt/dbt_transform/dbt_project.yml
+[0m15:30:07.941144 [info ] [MainThread]: adapter type: bigquery
+[0m15:30:07.941906 [info ] [MainThread]: adapter version: 1.11.0
+[0m15:30:08.241409 [info ] [MainThread]: Configuration:
+[0m15:30:08.243046 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:30:08.243896 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:30:08.244692 [info ] [MainThread]: Required dependencies:
+[0m15:30:08.245526 [debug] [MainThread]: Executing "git --help"
+[0m15:30:08.248903 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:30:08.250852 [debug] [MainThread]: STDERR: "b''"
+[0m15:30:08.252174 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:30:08.253271 [info ] [MainThread]: Connection:
+[0m15:30:08.254218 [info ] [MainThread]:   method: service-account
+[0m15:30:08.255065 [info ] [MainThread]:   database: bigquery-486314
+[0m15:30:08.255952 [info ] [MainThread]:   execution_project: bigquery-486314
+[0m15:30:08.256838 [info ] [MainThread]:   schema: crypto_data
+[0m15:30:08.257769 [info ] [MainThread]:   location: EU
+[0m15:30:08.260018 [info ] [MainThread]:   priority: interactive
+[0m15:30:08.262437 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m15:30:08.264687 [info ] [MainThread]:   impersonate_service_account: None
+[0m15:30:08.266273 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m15:30:08.267756 [info ] [MainThread]:   job_retries: 1
+[0m15:30:08.269261 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m15:30:08.270081 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m15:30:08.271717 [info ] [MainThread]:   timeout_seconds: 300
+[0m15:30:08.273175 [info ] [MainThread]:   client_id: None
+[0m15:30:08.275212 [info ] [MainThread]:   token_uri: None
+[0m15:30:08.276203 [info ] [MainThread]:   compute_region: None
+[0m15:30:08.277183 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m15:30:08.278081 [info ] [MainThread]:   gcs_bucket: None
+[0m15:30:08.279004 [info ] [MainThread]:   dataproc_batch: None
+[0m15:30:08.280724 [info ] [MainThread]: Registered adapter: bigquery=1.11.0
+[0m15:30:08.935355 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m15:30:08.936462 [debug] [MainThread]: On debug: select 1 as id
+[0m15:30:08.937390 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:30:11.859230 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bigquery-486314&j=bq:EU:882ad25f-f0c3-4105-bd18-ac669c0c5bfe&page=queryresults
+[0m15:30:12.038043 [debug] [MainThread]: SQL status: OK in 0.177 seconds
+[0m15:30:12.296411 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:30:12.297667 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:30:12.298837 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 21.408365, "process_in_blocks": "64", "process_kernel_time": 4.862739, "process_mem_max_rss": "381092", "process_out_blocks": "336", "process_user_time": 17.78271}
+[0m15:30:12.299931 [debug] [MainThread]: Command `dbt debug` succeeded at 15:30:12.299764 after 21.41 seconds
+[0m15:30:12.300690 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:30:12.301596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x746a3eacf770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x746a1d58e960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x746a3f428920>]}
+[0m15:30:12.302785 [debug] [MainThread]: Flushing usage events
+[0m15:30:12.882090 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:42:32.351890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e95be775a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e95be775670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e95bf6c7a40>]}
+
+
+============================== 15:42:32.362987 | f25ad7c2-044a-43a7-9e9b-885f0cd09cb6 ==============================
+[0m15:42:32.362987 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:42:32.366667 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'partial_parse': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'fail_fast': 'False', 'profiles_dir': '/home/hal/.dbt', 'printer_width': '80', 'target_path': 'None', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'debug': 'False', 'no_print': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'empty': 'False', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'introspect': 'True', 'static_parser': 'True', 'log_path': '/home/hal/projets/realtime-crypto-elt/dbt_transform/logs'}
+[0m15:42:47.249563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f25ad7c2-044a-43a7-9e9b-885f0cd09cb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e95bd901070>]}
+[0m15:42:47.420265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f25ad7c2-044a-43a7-9e9b-885f0cd09cb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e95bf52f3e0>]}
+[0m15:42:47.421621 [info ] [MainThread]: Registered adapter: bigquery=1.11.0
+[0m15:42:48.063387 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:42:48.065023 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:42:48.066068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f25ad7c2-044a-43a7-9e9b-885f0cd09cb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e959bb44680>]}
+[0m15:42:52.680120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f25ad7c2-044a-43a7-9e9b-885f0cd09cb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e959afee000>]}
+[0m15:42:52.958175 [debug] [MainThread]: Wrote artifact WritableManifest to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/manifest.json
+[0m15:42:52.961748 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/semantic_manifest.json
+[0m15:42:53.031302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f25ad7c2-044a-43a7-9e9b-885f0cd09cb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e959a3791c0>]}
+[0m15:42:53.032654 [info ] [MainThread]: Found 5 models, 4 data tests, 1 source, 538 macros
+[0m15:42:53.033526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f25ad7c2-044a-43a7-9e9b-885f0cd09cb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e959a4e0c50>]}
+[0m15:42:53.037891 [info ] [MainThread]: 
+[0m15:42:53.038855 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:42:53.039677 [info ] [MainThread]: 
+[0m15:42:53.041170 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:42:53.054865 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bigquery-486314'
+[0m15:42:53.058714 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:42:53.836503 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_bigquery-486314, now list_bigquery-486314_crypto_data)
+[0m15:42:53.837554 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:42:54.453368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f25ad7c2-044a-43a7-9e9b-885f0cd09cb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e959ae8ddf0>]}
+[0m15:42:54.454329 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:42:54.508547 [debug] [Thread-1 (]: Began running node model.crypto_dbt.my_first_dbt_model
+[0m15:42:54.510281 [info ] [Thread-1 (]: 1 of 5 START sql table model crypto_data.my_first_dbt_model .................... [RUN]
+[0m15:42:54.511528 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_bigquery-486314_crypto_data, now model.crypto_dbt.my_first_dbt_model)
+[0m15:42:54.512565 [debug] [Thread-1 (]: Began compiling node model.crypto_dbt.my_first_dbt_model
+[0m15:42:54.541472 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_dbt.my_first_dbt_model"
+[0m15:42:54.543603 [debug] [Thread-1 (]: Began executing node model.crypto_dbt.my_first_dbt_model
+[0m15:42:54.677192 [debug] [Thread-1 (]: Writing runtime sql for node "model.crypto_dbt.my_first_dbt_model"
+[0m15:42:54.679988 [debug] [Thread-1 (]: On model.crypto_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "crypto_dbt", "target_name": "dev", "node_id": "model.crypto_dbt.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `bigquery-486314`.`crypto_data`.`my_first_dbt_model`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m15:42:54.681248 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:42:55.305738 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bigquery-486314&j=bq:EU:32c6d703-7250-450c-af93-9083c8d1d94f&page=queryresults
+[0m15:42:55.307624 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bigquery-486314&j=bq:EU:32c6d703-7250-450c-af93-9083c8d1d94f&page=queryresults
+[0m15:42:55.335276 [debug] [Thread-1 (]: Database Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)
+  Not found: Dataset bigquery-486314:crypto_data was not found in location EU
+  compiled code at target/run/crypto_dbt/models/example/my_first_dbt_model.sql
+[0m15:42:55.341110 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f25ad7c2-044a-43a7-9e9b-885f0cd09cb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e959aef5e80>]}
+[0m15:42:55.343322 [error] [Thread-1 (]: 1 of 5 ERROR creating sql table model crypto_data.my_first_dbt_model ........... [[31mERROR[0m in 0.83s]
+[0m15:42:55.348527 [debug] [Thread-1 (]: Finished running node model.crypto_dbt.my_first_dbt_model
+[0m15:42:55.350350 [debug] [Thread-1 (]: Began running node model.crypto_dbt.stg_raw_prices
+[0m15:42:55.351608 [debug] [Thread-4 (]: Marking all children of 'model.crypto_dbt.my_first_dbt_model' to be skipped because of status 'error'.  Reason: Database Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)
+  Not found: Dataset bigquery-486314:crypto_data was not found in location EU
+  compiled code at target/run/crypto_dbt/models/example/my_first_dbt_model.sql.
+[0m15:42:55.353181 [info ] [Thread-1 (]: 2 of 5 START sql view model crypto_data.stg_raw_prices ......................... [RUN]
+[0m15:42:55.357277 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.crypto_dbt.my_first_dbt_model, now model.crypto_dbt.stg_raw_prices)
+[0m15:42:55.358546 [debug] [Thread-1 (]: Began compiling node model.crypto_dbt.stg_raw_prices
+[0m15:42:55.374116 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_dbt.stg_raw_prices"
+[0m15:42:55.377507 [debug] [Thread-1 (]: Began executing node model.crypto_dbt.stg_raw_prices
+[0m15:42:55.451020 [debug] [Thread-1 (]: Writing runtime sql for node "model.crypto_dbt.stg_raw_prices"
+[0m15:42:55.452717 [debug] [Thread-1 (]: On model.crypto_dbt.stg_raw_prices: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "crypto_dbt", "target_name": "dev", "node_id": "model.crypto_dbt.stg_raw_prices"} */
+
+
+  create or replace view `bigquery-486314`.`crypto_data`.`stg_raw_prices`
+  OPTIONS()
+  as with source as (
+    select * from `bigquery-486314`.`crypto_data`.`raw_prices`
+)
+
+select
+    coin,
+    price_usd,
+    timestamp as price_timestamp,
+    ingested_at
+from source;
+
+
+[0m15:42:55.453948 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:42:56.032546 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bigquery-486314&j=bq:EU:72f7fc1f-3796-49ef-afbe-095658f553a2&page=queryresults
+[0m15:42:56.033832 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bigquery-486314&j=bq:EU:72f7fc1f-3796-49ef-afbe-095658f553a2&page=queryresults
+[0m15:42:56.052513 [debug] [Thread-1 (]: Database Error in model stg_raw_prices (models/staging/stg_raw_prices.sql)
+  Not found: Dataset bigquery-486314:crypto_data was not found in location EU
+  compiled code at target/run/crypto_dbt/models/staging/stg_raw_prices.sql
+[0m15:42:56.054881 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f25ad7c2-044a-43a7-9e9b-885f0cd09cb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e959a4e2930>]}
+[0m15:42:56.058115 [error] [Thread-1 (]: 2 of 5 ERROR creating sql view model crypto_data.stg_raw_prices ................ [[31mERROR[0m in 0.70s]
+[0m15:42:56.060807 [debug] [Thread-1 (]: Finished running node model.crypto_dbt.stg_raw_prices
+[0m15:42:56.063287 [debug] [Thread-1 (]: Began running node model.crypto_dbt.my_second_dbt_model
+[0m15:42:56.065524 [debug] [Thread-4 (]: Marking all children of 'model.crypto_dbt.stg_raw_prices' to be skipped because of status 'error'.  Reason: Database Error in model stg_raw_prices (models/staging/stg_raw_prices.sql)
+  Not found: Dataset bigquery-486314:crypto_data was not found in location EU
+  compiled code at target/run/crypto_dbt/models/staging/stg_raw_prices.sql.
+[0m15:42:56.067615 [info ] [Thread-1 (]: 3 of 5 SKIP relation crypto_data.my_second_dbt_model ........................... [[33mSKIP[0m]
+[0m15:42:56.070697 [debug] [Thread-1 (]: Finished running node model.crypto_dbt.my_second_dbt_model
+[0m15:42:56.072364 [debug] [Thread-1 (]: Began running node model.crypto_dbt.int_prices_with_stats
+[0m15:42:56.073600 [info ] [Thread-1 (]: 4 of 5 SKIP relation crypto_data.int_prices_with_stats ......................... [[33mSKIP[0m]
+[0m15:42:56.075021 [debug] [Thread-1 (]: Finished running node model.crypto_dbt.int_prices_with_stats
+[0m15:42:56.077330 [debug] [Thread-1 (]: Began running node model.crypto_dbt.mart_crypto_summary
+[0m15:42:56.078665 [info ] [Thread-1 (]: 5 of 5 SKIP relation crypto_data.mart_crypto_summary ........................... [[33mSKIP[0m]
+[0m15:42:56.079814 [debug] [Thread-1 (]: Finished running node model.crypto_dbt.mart_crypto_summary
+[0m15:42:56.083745 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:42:56.138132 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:42:56.139106 [debug] [MainThread]: Connection 'model.crypto_dbt.stg_raw_prices' was properly closed.
+[0m15:42:56.140200 [info ] [MainThread]: 
+[0m15:42:56.141366 [info ] [MainThread]: Finished running 1 table model, 4 view models in 0 hours 0 minutes and 3.10 seconds (3.10s).
+[0m15:42:56.144222 [debug] [MainThread]: Command end result
+[0m15:42:56.242853 [debug] [MainThread]: Wrote artifact WritableManifest to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/manifest.json
+[0m15:42:56.248431 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/semantic_manifest.json
+[0m15:42:56.264144 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/run_results.json
+[0m15:42:56.265036 [info ] [MainThread]: 
+[0m15:42:56.266147 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m15:42:56.267037 [info ] [MainThread]: 
+[0m15:42:56.268096 [error] [MainThread]: [31mFailure in model my_first_dbt_model (models/example/my_first_dbt_model.sql)[0m
+[0m15:42:56.269341 [error] [MainThread]:   Database Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)
+  Not found: Dataset bigquery-486314:crypto_data was not found in location EU
+  compiled code at target/run/crypto_dbt/models/example/my_first_dbt_model.sql
+[0m15:42:56.270150 [info ] [MainThread]: 
+[0m15:42:56.271224 [info ] [MainThread]:   compiled code at target/compiled/crypto_dbt/models/example/my_first_dbt_model.sql
+[0m15:42:56.272034 [info ] [MainThread]: 
+[0m15:42:56.273654 [error] [MainThread]: [31mFailure in model stg_raw_prices (models/staging/stg_raw_prices.sql)[0m
+[0m15:42:56.275428 [error] [MainThread]:   Database Error in model stg_raw_prices (models/staging/stg_raw_prices.sql)
+  Not found: Dataset bigquery-486314:crypto_data was not found in location EU
+  compiled code at target/run/crypto_dbt/models/staging/stg_raw_prices.sql
+[0m15:42:56.276313 [info ] [MainThread]: 
+[0m15:42:56.277591 [info ] [MainThread]:   compiled code at target/compiled/crypto_dbt/models/staging/stg_raw_prices.sql
+[0m15:42:56.278987 [info ] [MainThread]: 
+[0m15:42:56.280285 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=3 NO-OP=0 TOTAL=5
+[0m15:42:56.282052 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 24.116982, "process_in_blocks": "168", "process_kernel_time": 2.984271, "process_mem_max_rss": "392344", "process_out_blocks": "3672", "process_user_time": 23.989658}
+[0m15:42:56.283104 [debug] [MainThread]: Command `dbt run` failed at 15:42:56.282889 after 24.12 seconds
+[0m15:42:56.284065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e959aec4fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e959a59f800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e959ae65fd0>]}
+[0m15:42:56.285154 [debug] [MainThread]: Flushing usage events
+[0m15:42:56.850904 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:44:17.040319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73092e1eb830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73092e1eb890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73092e1e9400>]}
+
+
+============================== 15:44:17.048516 | af41af03-0dd8-4664-8619-5aa60147e227 ==============================
+[0m15:44:17.048516 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:44:17.049861 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'fail_fast': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': '/home/hal/projets/realtime-crypto-elt/dbt_transform/logs', 'warn_error': 'None', 'introspect': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'static_parser': 'True', 'debug': 'False', 'profiles_dir': '/home/hal/.dbt', 'target_path': 'None', 'no_print': 'None', 'use_colors': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False'}
+[0m15:44:30.811731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'af41af03-0dd8-4664-8619-5aa60147e227', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73092e76dbe0>]}
+[0m15:44:30.984621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'af41af03-0dd8-4664-8619-5aa60147e227', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x730930464ad0>]}
+[0m15:44:30.985921 [info ] [MainThread]: Registered adapter: bigquery=1.11.0
+[0m15:44:31.620103 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:44:31.929765 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m15:44:31.930878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'af41af03-0dd8-4664-8619-5aa60147e227', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73092e1bdbe0>]}
+[0m15:44:35.543152 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.crypto_dbt.example
+[0m15:44:35.585980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'af41af03-0dd8-4664-8619-5aa60147e227', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73090b0a6000>]}
+[0m15:44:35.796791 [debug] [MainThread]: Wrote artifact WritableManifest to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/manifest.json
+[0m15:44:35.800498 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/semantic_manifest.json
+[0m15:44:35.825974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'af41af03-0dd8-4664-8619-5aa60147e227', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73090b145370>]}
+[0m15:44:35.827042 [info ] [MainThread]: Found 3 models, 1 source, 538 macros
+[0m15:44:35.828022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'af41af03-0dd8-4664-8619-5aa60147e227', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73090b0a4950>]}
+[0m15:44:35.831410 [info ] [MainThread]: 
+[0m15:44:35.832248 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:44:35.833079 [info ] [MainThread]: 
+[0m15:44:35.834129 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:44:35.848496 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bigquery-486314'
+[0m15:44:35.851287 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:44:36.430020 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_bigquery-486314, now list_bigquery-486314_crypto_data)
+[0m15:44:36.431272 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:44:37.042017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'af41af03-0dd8-4664-8619-5aa60147e227', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73093034c2f0>]}
+[0m15:44:37.049158 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:44:37.119745 [debug] [Thread-1 (]: Began running node model.crypto_dbt.stg_raw_prices
+[0m15:44:37.121623 [info ] [Thread-1 (]: 1 of 3 START sql view model crypto_data.stg_raw_prices ......................... [RUN]
+[0m15:44:37.123338 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_bigquery-486314_crypto_data, now model.crypto_dbt.stg_raw_prices)
+[0m15:44:37.125124 [debug] [Thread-1 (]: Began compiling node model.crypto_dbt.stg_raw_prices
+[0m15:44:37.151786 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_dbt.stg_raw_prices"
+[0m15:44:37.153324 [debug] [Thread-1 (]: Began executing node model.crypto_dbt.stg_raw_prices
+[0m15:44:37.250454 [debug] [Thread-1 (]: Writing runtime sql for node "model.crypto_dbt.stg_raw_prices"
+[0m15:44:37.252074 [debug] [Thread-1 (]: On model.crypto_dbt.stg_raw_prices: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "crypto_dbt", "target_name": "dev", "node_id": "model.crypto_dbt.stg_raw_prices"} */
+
+
+  create or replace view `bigquery-486314`.`crypto_data`.`stg_raw_prices`
+  OPTIONS()
+  as with source as (
+    select * from `bigquery-486314`.`crypto_data`.`raw_prices`
+)
+
+select
+    coin,
+    price_usd,
+    timestamp as price_timestamp,
+    ingested_at
+from source;
+
+
+[0m15:44:37.253234 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:44:38.101704 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bigquery-486314&j=bq:europe-west1:93d41888-bfeb-4f18-afff-1e36d846c89d&page=queryresults
+[0m15:44:38.336619 [debug] [Thread-1 (]: SQL status: OK in 0.234 seconds
+[0m15:44:38.464650 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af41af03-0dd8-4664-8619-5aa60147e227', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73090e75ac30>]}
+[0m15:44:38.466898 [info ] [Thread-1 (]: 1 of 3 OK created sql view model crypto_data.stg_raw_prices .................... [[32mCREATE VIEW (0 processed)[0m in 1.34s]
+[0m15:44:38.469545 [debug] [Thread-1 (]: Finished running node model.crypto_dbt.stg_raw_prices
+[0m15:44:38.471713 [debug] [Thread-1 (]: Began running node model.crypto_dbt.int_prices_with_stats
+[0m15:44:38.472609 [info ] [Thread-1 (]: 2 of 3 START sql view model crypto_data.int_prices_with_stats .................. [RUN]
+[0m15:44:38.474898 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.crypto_dbt.stg_raw_prices, now model.crypto_dbt.int_prices_with_stats)
+[0m15:44:38.476259 [debug] [Thread-1 (]: Began compiling node model.crypto_dbt.int_prices_with_stats
+[0m15:44:38.487527 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_dbt.int_prices_with_stats"
+[0m15:44:38.489113 [debug] [Thread-1 (]: Began executing node model.crypto_dbt.int_prices_with_stats
+[0m15:44:38.498369 [debug] [Thread-1 (]: Writing runtime sql for node "model.crypto_dbt.int_prices_with_stats"
+[0m15:44:38.499969 [debug] [Thread-1 (]: On model.crypto_dbt.int_prices_with_stats: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "crypto_dbt", "target_name": "dev", "node_id": "model.crypto_dbt.int_prices_with_stats"} */
+
+
+  create or replace view `bigquery-486314`.`crypto_data`.`int_prices_with_stats`
+  OPTIONS()
+  as with prices as (
+    select * from `bigquery-486314`.`crypto_data`.`stg_raw_prices`
+),
+
+price_stats as (
+    select
+        coin,
+        price_usd,
+        price_timestamp,
+        avg(price_usd) over (partition by coin order by price_timestamp rows between 9 preceding and current row) as price_avg_10,
+        min(price_usd) over (partition by coin) as price_min_all,
+        max(price_usd) over (partition by coin) as price_max_all
+    from prices
+)
+
+select * from price_stats;
+
+
+[0m15:44:38.501251 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:44:39.666434 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bigquery-486314&j=bq:europe-west1:d14aaa0a-408f-4e03-b807-202aada63030&page=queryresults
+[0m15:44:39.875462 [debug] [Thread-1 (]: SQL status: OK in 0.208 seconds
+[0m15:44:39.900977 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af41af03-0dd8-4664-8619-5aa60147e227', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7309085bd8e0>]}
+[0m15:44:39.903076 [info ] [Thread-1 (]: 2 of 3 OK created sql view model crypto_data.int_prices_with_stats ............. [[32mCREATE VIEW (0 processed)[0m in 1.43s]
+[0m15:44:39.904870 [debug] [Thread-1 (]: Finished running node model.crypto_dbt.int_prices_with_stats
+[0m15:44:39.906544 [debug] [Thread-1 (]: Began running node model.crypto_dbt.mart_crypto_summary
+[0m15:44:39.907617 [info ] [Thread-1 (]: 3 of 3 START sql view model crypto_data.mart_crypto_summary .................... [RUN]
+[0m15:44:39.908993 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.crypto_dbt.int_prices_with_stats, now model.crypto_dbt.mart_crypto_summary)
+[0m15:44:39.910207 [debug] [Thread-1 (]: Began compiling node model.crypto_dbt.mart_crypto_summary
+[0m15:44:39.920566 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_dbt.mart_crypto_summary"
+[0m15:44:39.922739 [debug] [Thread-1 (]: Began executing node model.crypto_dbt.mart_crypto_summary
+[0m15:44:39.934797 [debug] [Thread-1 (]: Writing runtime sql for node "model.crypto_dbt.mart_crypto_summary"
+[0m15:44:39.936644 [debug] [Thread-1 (]: On model.crypto_dbt.mart_crypto_summary: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "crypto_dbt", "target_name": "dev", "node_id": "model.crypto_dbt.mart_crypto_summary"} */
+
+
+  create or replace view `bigquery-486314`.`crypto_data`.`mart_crypto_summary`
+  OPTIONS()
+  as with stats as (
+    select * from `bigquery-486314`.`crypto_data`.`int_prices_with_stats`
+),
+
+latest as (
+    select
+        coin,
+        price_usd as current_price,
+        price_avg_10,
+        price_min_all,
+        price_max_all,
+        price_timestamp,
+        row_number() over (partition by coin order by price_timestamp desc) as rn
+    from stats
+)
+
+select
+    coin,
+    current_price,
+    price_avg_10,
+    price_min_all,
+    price_max_all,
+    round((current_price - price_avg_10) / price_avg_10 * 100, 2) as pct_vs_avg,
+    price_timestamp as last_update
+from latest
+where rn = 1;
+
+
+[0m15:44:39.938283 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:44:41.063771 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bigquery-486314&j=bq:europe-west1:40c9b27b-9e1d-44a1-a611-432ba5657645&page=queryresults
+[0m15:44:41.397752 [debug] [Thread-1 (]: SQL status: OK in 0.333 seconds
+[0m15:44:41.408544 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af41af03-0dd8-4664-8619-5aa60147e227', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7309083974a0>]}
+[0m15:44:41.410135 [info ] [Thread-1 (]: 3 of 3 OK created sql view model crypto_data.mart_crypto_summary ............... [[32mCREATE VIEW (0 processed)[0m in 1.50s]
+[0m15:44:41.411935 [debug] [Thread-1 (]: Finished running node model.crypto_dbt.mart_crypto_summary
+[0m15:44:41.414314 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:44:41.465937 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:44:41.466784 [debug] [MainThread]: Connection 'model.crypto_dbt.mart_crypto_summary' was properly closed.
+[0m15:44:41.467772 [info ] [MainThread]: 
+[0m15:44:41.468567 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 5.63 seconds (5.63s).
+[0m15:44:41.470852 [debug] [MainThread]: Command end result
+[0m15:44:41.551840 [debug] [MainThread]: Wrote artifact WritableManifest to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/manifest.json
+[0m15:44:41.555463 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/semantic_manifest.json
+[0m15:44:41.570234 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/run_results.json
+[0m15:44:41.571112 [info ] [MainThread]: 
+[0m15:44:41.572052 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:44:41.572802 [info ] [MainThread]: 
+[0m15:44:41.573815 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m15:44:41.574958 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 24.678974, "process_in_blocks": "0", "process_kernel_time": 2.700063, "process_mem_max_rss": "393652", "process_out_blocks": "3384", "process_user_time": 22.569977}
+[0m15:44:41.575978 [debug] [MainThread]: Command `dbt run` succeeded at 15:44:41.575826 after 24.68 seconds
+[0m15:44:41.576821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73092e4b79b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73090a9cc050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73092d874e90>]}
+[0m15:44:41.577680 [debug] [MainThread]: Flushing usage events
+[0m15:44:42.117676 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:46:32.341711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x726201c979b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x726201b09f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x726203a4fcb0>]}
+
+
+============================== 15:46:32.349433 | c2f2dd02-dc1c-4fc2-95f5-e2797cfd605e ==============================
+[0m15:46:32.349433 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:46:32.351094 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'printer_width': '80', 'invocation_command': 'dbt run', 'static_parser': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'introspect': 'True', 'log_cache_events': 'False', 'use_colors': 'True', 'no_print': 'None', 'log_format': 'default', 'log_path': '/home/hal/projets/realtime-crypto-elt/dbt_transform/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'write_json': 'True', 'version_check': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'quiet': 'False', 'profiles_dir': '/home/hal/.dbt', 'empty': 'False', 'send_anonymous_usage_stats': 'True'}
+[0m15:46:47.037509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c2f2dd02-dc1c-4fc2-95f5-e2797cfd605e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x726203864bc0>]}
+[0m15:46:47.202926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c2f2dd02-dc1c-4fc2-95f5-e2797cfd605e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7261def5d4c0>]}
+[0m15:46:47.204184 [info ] [MainThread]: Registered adapter: bigquery=1.11.0
+[0m15:46:47.849905 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:46:48.100794 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m15:46:48.102121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c2f2dd02-dc1c-4fc2-95f5-e2797cfd605e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7262015bda60>]}
+[0m15:46:51.735644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c2f2dd02-dc1c-4fc2-95f5-e2797cfd605e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7261de4dbfb0>]}
+[0m15:46:51.948501 [debug] [MainThread]: Wrote artifact WritableManifest to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/manifest.json
+[0m15:46:51.952261 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/semantic_manifest.json
+[0m15:46:51.975551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c2f2dd02-dc1c-4fc2-95f5-e2797cfd605e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7261de66a180>]}
+[0m15:46:51.976629 [info ] [MainThread]: Found 3 models, 1 source, 538 macros
+[0m15:46:51.977454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c2f2dd02-dc1c-4fc2-95f5-e2797cfd605e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7261de753320>]}
+[0m15:46:51.981242 [info ] [MainThread]: 
+[0m15:46:51.982274 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:46:51.983443 [info ] [MainThread]: 
+[0m15:46:51.985150 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:46:51.998775 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bigquery-486314'
+[0m15:46:52.000345 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:46:52.626845 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_bigquery-486314, now list_bigquery-486314_crypto_data)
+[0m15:46:52.627958 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:46:53.265682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c2f2dd02-dc1c-4fc2-95f5-e2797cfd605e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7261de7111c0>]}
+[0m15:46:53.266944 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:46:53.317115 [debug] [Thread-1 (]: Began running node model.crypto_dbt.stg_raw_prices
+[0m15:46:53.318596 [info ] [Thread-1 (]: 1 of 3 START sql view model crypto_data.stg_raw_prices ......................... [RUN]
+[0m15:46:53.320147 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_bigquery-486314_crypto_data, now model.crypto_dbt.stg_raw_prices)
+[0m15:46:53.321503 [debug] [Thread-1 (]: Began compiling node model.crypto_dbt.stg_raw_prices
+[0m15:46:53.347357 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_dbt.stg_raw_prices"
+[0m15:46:53.348749 [debug] [Thread-1 (]: Began executing node model.crypto_dbt.stg_raw_prices
+[0m15:46:53.453499 [debug] [Thread-1 (]: Writing runtime sql for node "model.crypto_dbt.stg_raw_prices"
+[0m15:46:53.455306 [debug] [Thread-1 (]: On model.crypto_dbt.stg_raw_prices: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "crypto_dbt", "target_name": "dev", "node_id": "model.crypto_dbt.stg_raw_prices"} */
+
+
+  create or replace view `bigquery-486314`.`crypto_data`.`stg_raw_prices`
+  OPTIONS()
+  as with source as (
+    select * from `bigquery-486314`.`crypto_data`.`raw_prices`
+)
+
+select
+    coin,
+    price_usd,
+    timestamp as price_timestamp,
+    ingested_at
+from source;
+
+
+[0m15:46:53.456430 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:46:54.893256 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bigquery-486314&j=bq:europe-west1:83e8ce8d-5650-4cfd-833e-da87712cc1bb&page=queryresults
+[0m15:46:55.636544 [debug] [Thread-1 (]: SQL status: OK in 0.742 seconds
+[0m15:46:55.780854 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c2f2dd02-dc1c-4fc2-95f5-e2797cfd605e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7261ddb38e90>]}
+[0m15:46:55.782823 [info ] [Thread-1 (]: 1 of 3 OK created sql view model crypto_data.stg_raw_prices .................... [[32mCREATE VIEW (0 processed)[0m in 2.46s]
+[0m15:46:55.784512 [debug] [Thread-1 (]: Finished running node model.crypto_dbt.stg_raw_prices
+[0m15:46:55.786631 [debug] [Thread-1 (]: Began running node model.crypto_dbt.int_prices_with_stats
+[0m15:46:55.788035 [info ] [Thread-1 (]: 2 of 3 START sql view model crypto_data.int_prices_with_stats .................. [RUN]
+[0m15:46:55.789061 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.crypto_dbt.stg_raw_prices, now model.crypto_dbt.int_prices_with_stats)
+[0m15:46:55.790202 [debug] [Thread-1 (]: Began compiling node model.crypto_dbt.int_prices_with_stats
+[0m15:46:55.799268 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_dbt.int_prices_with_stats"
+[0m15:46:55.801688 [debug] [Thread-1 (]: Began executing node model.crypto_dbt.int_prices_with_stats
+[0m15:46:55.812015 [debug] [Thread-1 (]: Writing runtime sql for node "model.crypto_dbt.int_prices_with_stats"
+[0m15:46:55.813775 [debug] [Thread-1 (]: On model.crypto_dbt.int_prices_with_stats: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "crypto_dbt", "target_name": "dev", "node_id": "model.crypto_dbt.int_prices_with_stats"} */
+
+
+  create or replace view `bigquery-486314`.`crypto_data`.`int_prices_with_stats`
+  OPTIONS()
+  as with prices as (
+    select * from `bigquery-486314`.`crypto_data`.`stg_raw_prices`
+),
+
+price_stats as (
+    select
+        coin,
+        price_usd,
+        price_timestamp,
+        avg(price_usd) over (partition by coin order by price_timestamp rows between 9 preceding and current row) as price_avg_10,
+        min(price_usd) over (partition by coin) as price_min_all,
+        max(price_usd) over (partition by coin) as price_max_all
+    from prices
+)
+
+select * from price_stats;
+
+
+[0m15:46:55.815018 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:46:56.892918 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bigquery-486314&j=bq:europe-west1:16e6314d-c03c-4a1f-8b45-420c3faa7bcc&page=queryresults
+[0m15:46:57.149450 [debug] [Thread-1 (]: SQL status: OK in 0.255 seconds
+[0m15:46:57.161450 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c2f2dd02-dc1c-4fc2-95f5-e2797cfd605e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7261bf6144a0>]}
+[0m15:46:57.163195 [info ] [Thread-1 (]: 2 of 3 OK created sql view model crypto_data.int_prices_with_stats ............. [[32mCREATE VIEW (0 processed)[0m in 1.37s]
+[0m15:46:57.165248 [debug] [Thread-1 (]: Finished running node model.crypto_dbt.int_prices_with_stats
+[0m15:46:57.166569 [debug] [Thread-1 (]: Began running node model.crypto_dbt.mart_crypto_summary
+[0m15:46:57.167664 [info ] [Thread-1 (]: 3 of 3 START sql table model crypto_data.mart_crypto_summary ................... [RUN]
+[0m15:46:57.168735 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.crypto_dbt.int_prices_with_stats, now model.crypto_dbt.mart_crypto_summary)
+[0m15:46:57.169794 [debug] [Thread-1 (]: Began compiling node model.crypto_dbt.mart_crypto_summary
+[0m15:46:57.180251 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_dbt.mart_crypto_summary"
+[0m15:46:57.182996 [debug] [Thread-1 (]: Began executing node model.crypto_dbt.mart_crypto_summary
+[0m15:46:57.219490 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:46:57.926521 [debug] [Thread-1 (]: Writing runtime sql for node "model.crypto_dbt.mart_crypto_summary"
+[0m15:46:57.928320 [debug] [Thread-1 (]: On model.crypto_dbt.mart_crypto_summary: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "crypto_dbt", "target_name": "dev", "node_id": "model.crypto_dbt.mart_crypto_summary"} */
+
+  
+    
+
+    create or replace table `bigquery-486314`.`crypto_data`.`mart_crypto_summary`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with stats as (
+    select * from `bigquery-486314`.`crypto_data`.`int_prices_with_stats`
+),
+
+latest as (
+    select
+        coin,
+        price_usd as current_price,
+        price_avg_10,
+        price_min_all,
+        price_max_all,
+        price_timestamp,
+        row_number() over (partition by coin order by price_timestamp desc) as rn
+    from stats
+)
+
+select
+    coin,
+    current_price,
+    price_avg_10,
+    price_min_all,
+    price_max_all,
+    round((current_price - price_avg_10) / price_avg_10 * 100, 2) as pct_vs_avg,
+    price_timestamp as last_update
+from latest
+where rn = 1
+    );
+  
+[0m15:46:58.635883 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bigquery-486314&j=bq:europe-west1:baefaa8c-657f-4f8f-be78-9a90dad889cf&page=queryresults
+[0m15:47:01.762338 [debug] [Thread-1 (]: SQL status: OK in 3.125 seconds
+[0m15:47:01.882430 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c2f2dd02-dc1c-4fc2-95f5-e2797cfd605e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7261dd960920>]}
+[0m15:47:01.884183 [info ] [Thread-1 (]: 3 of 3 OK created sql table model crypto_data.mart_crypto_summary .............. [[32mCREATE TABLE (7.0 rows, 0 processed)[0m in 4.71s]
+[0m15:47:01.886196 [debug] [Thread-1 (]: Finished running node model.crypto_dbt.mart_crypto_summary
+[0m15:47:01.888609 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:47:01.937535 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:47:01.938605 [debug] [MainThread]: Connection 'model.crypto_dbt.mart_crypto_summary' was properly closed.
+[0m15:47:01.939669 [info ] [MainThread]: 
+[0m15:47:01.940508 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 9.95 seconds (9.95s).
+[0m15:47:01.942922 [debug] [MainThread]: Command end result
+[0m15:47:02.018654 [debug] [MainThread]: Wrote artifact WritableManifest to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/manifest.json
+[0m15:47:02.023132 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/semantic_manifest.json
+[0m15:47:02.042149 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/hal/projets/realtime-crypto-elt/dbt_transform/target/run_results.json
+[0m15:47:02.043250 [info ] [MainThread]: 
+[0m15:47:02.044457 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:47:02.045515 [info ] [MainThread]: 
+[0m15:47:02.046772 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m15:47:02.048436 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 29.851086, "process_in_blocks": "0", "process_kernel_time": 2.952493, "process_mem_max_rss": "394188", "process_out_blocks": "3376", "process_user_time": 23.27979}
+[0m15:47:02.049536 [debug] [MainThread]: Command `dbt run` succeeded at 15:47:02.049378 after 29.85 seconds
+[0m15:47:02.050487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7262015e7860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7261bf7476b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7261bf7689b0>]}
+[0m15:47:02.051703 [debug] [MainThread]: Flushing usage events
+[0m15:47:02.633523 [debug] [MainThread]: An error was encountered while trying to flush usage events
